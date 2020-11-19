@@ -15,10 +15,10 @@ export default class AddCategoryIdToTransactions1605650538075 implements Migrati
         await queryRunner.createForeignKey(
             'transactions',
             new TableForeignKey({
+                name: 'TransactionCategory',
                 columnNames: ['category_id'],
                 referencedColumnNames: ['id'],
                 referencedTableName: 'categories',
-                name: 'TransactionCategory',
                 onUpdate: 'CASCADE',
                 onDelete: 'SET NULL',
             }),

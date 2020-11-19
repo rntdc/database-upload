@@ -25,7 +25,7 @@ class Transaction {
   value: number;
 
   @ManyToOne(() => Category)
-  @JoinColumn({ name: 'category_id '})
+  @JoinColumn({ name: 'category_id' })
   category_id: string;   
 
   @CreateDateColumn()

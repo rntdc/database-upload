@@ -17,19 +17,16 @@ export default class CreateTransactions1605649277203 implements MigrationInterfa
                     {
                         name: 'title',
                         type: 'varchar',
-                        isNullable: false,
                     },
                     {
                         name: 'value',
                         type: 'decimal',
                         precision: 10,
                         scale: 2,
-                        isNullable: false,
                     },
                     {
                         name: 'type',
                         type: 'varchar',
-                        isNullable: false,
                     },
                     {
                         name: "created_at",
