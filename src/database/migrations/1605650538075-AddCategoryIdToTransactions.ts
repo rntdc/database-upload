@@ -18,7 +18,7 @@ export default class AddCategoryIdToTransactions1605650538075 implements Migrati
                 columnNames: ['category_id'],
                 referencedColumnNames: ['id'],
                 referencedTableName: 'categories',
-                name: 'TransactionsCategory',
+                name: 'TransactionCategory',
                 onUpdate: 'CASCADE',
                 onDelete: 'SET NULL',
             }),
