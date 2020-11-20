@@ -31,27 +31,4 @@ class CreateTransactionService {
   }
 }
 
-/*
-class CreateTransactionService {
-  public async execute({
-    title,
-    type,
-    value,
-    category
-  }: Request): Promise<Transaction> {
-    const transactionsRepository = getCustomRepository(Transaction);
-
-    const transaction = transactionsRepository.create({
-      title,
-      type,
-      value,
-    });
-
-    await transactionsRepository.save(transaction);
-    
-    return transaction;
-  }
-}
-*/
-
 export default CreateTransactionService;
